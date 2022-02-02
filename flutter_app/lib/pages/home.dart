@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_app/pages/about.dart';
+import 'package:flutter_app/pages/media.dart';
+import 'package:flutter_app/pages/homeBody.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -8,10 +10,11 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _selectedIndex = 1;
+
   static List<Widget> get _widgetOptions => <Widget>[
-    const Text('This is the Home Screen'),
-    const Text('This is the Media Screen'),
-    const Text('This is the about Screen'),
+    HomeBody(),
+    Media(),
+    About(),
   ];
   @override
   Widget build(BuildContext context) {

@@ -1,47 +1,45 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/home.dart';
-import 'package:flutter_app/pages/about.dart';
-
+import 'package:flutter_app/main.dart';
 class Media extends StatefulWidget {
   @override
   _MediaState createState() => _MediaState();
 }
 
 class _MediaState extends State<Media> {
-  int _selectedIndex = 3;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar : buildAppBar(),
-      body : Text('this is the media screen'),
-      bottomNavigationBar: buildBottomNavigationBar(),
-    );
-  }
-  BottomNavigationBar buildBottomNavigationBar() {
-    return BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      currentIndex: _selectedIndex,
-      onTap: (value) {
-        setState(() {
-          _selectedIndex = value;
-        });
-      },
-      items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.book), label: "Medias"),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: "About"),
-      ],
-    );
-  }
-  AppBar buildAppBar() {
-    return AppBar(
-      title: Text("TP1"),
-      actions: [
-        IconButton(
-          icon: Icon(Icons.share),
-          onPressed: () {},
+      body : ListView(
+        padding: const EdgeInsets.all(8),
+        children: List.generate(
+        groupe_musique.length,
+        (index) => Card(
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(10)),
+          ),
+          child: InkWell(
+            onTap:(){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => GroupWidget(groupe_musique[index])),
+              );
+            },
+            child: ListTile(
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+              ),
+              dense: false,
+              contentPadding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
+              tileColor: Colors.red[800],
+              leading: Image.asset(groupe_musique[index].imageURL),
+              title: Text(groupe_musique[index].title),
+              subtitle: Text(groupe_musique[index].description_courte),
+            )
+          ),
         ),
-      ],
+      )
+    )
     );
   }
 }
+
