@@ -3,6 +3,7 @@ import 'package:flutter_app/pages/about.dart';
 import 'package:flutter_app/pages/media.dart';
 import 'package:flutter_app/pages/homeBody.dart';
 
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();

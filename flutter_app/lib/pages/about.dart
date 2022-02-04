@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:flutter_app/main.dart';
 
@@ -9,7 +8,6 @@ class About extends StatefulWidget {
 }
 
 class _AboutState extends State<About> {
-  int _selectedIndex = 2;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +65,7 @@ class _AboutState extends State<About> {
                                     Text(
                                       "Age",
                                       style: TextStyle(
-                                        color: Colors.redAccent,
+                                        color: Colors.red[800],
                                         fontSize: 22.0,
                                         fontWeight: FontWeight.bold,
                                       ),
@@ -79,7 +77,7 @@ class _AboutState extends State<About> {
                                       "22",
                                       style: TextStyle(
                                         fontSize: 20.0,
-                                        color: Colors.redAccent,
+                                        color: Colors.red[800],
                                       ),
                                     )
                                   ],
@@ -92,7 +90,7 @@ class _AboutState extends State<About> {
                                     Text(
                                       "Statut",
                                       style: TextStyle(
-                                        color: Colors.redAccent,
+                                        color: Colors.red[800],
                                         fontSize: 22.0,
                                         fontWeight: FontWeight.bold,
                                       ),
@@ -104,7 +102,7 @@ class _AboutState extends State<About> {
                                       "Etudiant",
                                       style: TextStyle(
                                         fontSize: 20.0,
-                                        color: Colors.redAccent,
+                                        color: Colors.red[800],
                                       ),
                                     )
                                   ],
@@ -117,7 +115,7 @@ class _AboutState extends State<About> {
                                     Text(
                                       "Groupes",
                                       style: TextStyle(
-                                        color: Colors.redAccent,
+                                        color: Colors.red[800],
                                         fontSize: 22.0,
                                         fontWeight: FontWeight.bold,
                                       ),
@@ -129,7 +127,7 @@ class _AboutState extends State<About> {
                                       "3",
                                       style: TextStyle(
                                         fontSize: 20.0,
-                                        color: Colors.redAccent,
+                                        color: Colors.red[800],
                                       ),
                                     )
                                   ],
@@ -154,7 +152,7 @@ class _AboutState extends State<About> {
                   Text(
                     "Bio:",
                     style: TextStyle(
-                        color: Colors.redAccent,
+                        color: Colors.red[800],
                         fontStyle: FontStyle.normal,
                         fontSize: 28.0
                     ),
@@ -191,16 +189,16 @@ class _AboutState extends State<About> {
                 child: Ink(
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
-                        begin: Alignment.centerRight,
-                        end: Alignment.centerLeft,
-                        colors: [Colors.redAccent,Colors.redAccent]
+                        begin: Alignment.bottomLeft,
+                        end: Alignment.topRight,
+                        colors: [Colors.red.shade900,Colors.deepOrange.shade800]
                     ),
                     borderRadius: BorderRadius.circular(30.0),
                   ),
                   child: Container(
                     constraints: BoxConstraints(maxWidth: 300.0, minHeight: 50.0),
                     alignment: Alignment.center,
-                    child: Text("Contact me",
+                    child: Text("Envoyez-moi un mail !",
                       style: TextStyle(color: Colors.white, fontSize: 26.0, fontWeight:FontWeight.w300),
                     ),
                   ),
