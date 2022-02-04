@@ -35,6 +35,7 @@ class _MediaState extends State<Media> {
               leading: Image.asset(groupe_musique[index].imageURL),
               title: Text(groupe_musique[index].title),
               subtitle: Text(groupe_musique[index].description_courte),
+              isThreeLine: true,
             )
           ),
         ),

@@ -8,15 +8,15 @@ class HomeBody extends StatefulWidget {
 
 class _HomeBodyState extends State<HomeBody> {
   List<String> trendingAlbums = [
-    "images/gojira_fortitude.jpg",
-    "images/gojira_frommarstosirius.jpg",
-    "images/gojira_magma.jpg"
+    "images/gojira/gojira_fortitude.jpg",
+    "images/metallica/metallica_hardwiredtoselfdestruct.jpg",
+    "images/gojira/gojira_magma.jpg"
   ];
 
   List<String> trendingSongs = [
-    "images/gojira_thewayofallflesh.jpg",
-    "images/gojira_lenfantsauvage.jpg",
-    "images/gojira.thelink.jpg"
+    "images/gojira/gojira_thewayofallflesh.jpg",
+    "images/gojira/gojira_lenfantsauvage.jpg",
+    "images/gojira/gojira_thelink.jpg"
   ];
 
   int selectedCategoryIndex = 1;

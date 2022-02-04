@@ -46,9 +46,11 @@ class _HomeState extends State<Home> {
   AppBar buildAppBar() {
     return AppBar(
       title: const Text("TP1"),
+      backgroundColor: Colors.red[900],
+      elevation: 10,
       actions: [
         IconButton(
-          icon: const Icon(Icons.share),
+          icon: const FlutterLogo(),
           onPressed: () {},
         ),
       ],
