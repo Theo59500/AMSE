@@ -58,7 +58,7 @@ final groupe_musique = [
     [['ATTENTION ATTENTION', '2018', 'images/shinedown/shinedown_attentionattention.jpg'], ['Threat to Survival', '2015', 'images/shinedown/shinedown_threattosurvival.jpg'], ["Amaryllis", "2008", "images/shinedown/shinedown_thesoundofmadness.jpg"], ["Us and Them", "2005", 'images/shinedown/shinedown_usandthem.jpg'], ["Leave a Whisper", "2003", "images/shinedown/shinedown_leaveawhisper.jpg"]],
   ),
   /**######################################################################################################**/
-  /** J'ai copié-collé le MediaModel 1 pour ajouter du contenu, on imagine que ce sont des autrs groupes... **/
+  /** J'ai copié-collé le MediaModel 1 pour ajouter du contenu, on imagine que ce sont des autrs groupes...**/
   /**######################################################################################################**/
   MediaModel(
     'images/gojira/Gojira.jpg',
