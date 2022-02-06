@@ -31,9 +31,7 @@ class _AboutState extends State<About> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       CircleAvatar(
-                        backgroundImage: NetworkImage(
-                          "https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/268256275_1793619404160690_6037562714311369091_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=hlXlhz8FOXUAX_7vwGI&_nc_ht=scontent-cdg2-1.xx&oh=00_AT_SZeqh-mmSLOk7xJ4Sdo7IjqfS9z4G2twrarTgC-eYaQ&oe=61FF3DDB",
-                        ),
+                        backgroundImage: AssetImage("images/about_pp.jpg"),
                         radius: 50.0,
                       ),
                       SizedBox(

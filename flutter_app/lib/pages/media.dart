@@ -15,6 +15,7 @@ class _MediaState extends State<Media> {
         children: List.generate(
         groupe_musique.length,
         (index) => Card(
+          color: Colors.red[900],
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
@@ -25,18 +26,20 @@ class _MediaState extends State<Media> {
                 MaterialPageRoute(builder: (context) => GroupWidget(groupe_musique[index])),
               );
             },
-            child: ListTile(
-              shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(10)),
+            child: CustomListItem(
+              description: groupe_musique[index].description_courte,
+              image: Container(
+                height: 130,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  image: DecorationImage(
+                    image: AssetImage(groupe_musique[index].imageURL),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
-              dense: false,
-              contentPadding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
-              tileColor: Colors.red[800],
-              leading: Image.asset(groupe_musique[index].imageURL),
-              title: Text(groupe_musique[index].title),
-              subtitle: Text(groupe_musique[index].description_courte),
-              isThreeLine: true,
-            )
+              title: groupe_musique[index].title,
+            ),
           ),
         ),
       )
