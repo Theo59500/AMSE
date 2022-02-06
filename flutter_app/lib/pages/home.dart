@@ -29,7 +29,7 @@ class _HomeState extends State<Home> {
   }
   BottomNavigationBar buildBottomNavigationBar() {
     return BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
+      type: BottomNavigationBarType.shifting,
       currentIndex: _selectedIndex,
       onTap: (value) {
         setState(() {
@@ -37,10 +37,17 @@ class _HomeState extends State<Home> {
         });
       },
       items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.book), label: "Medias"),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: "About"),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home", backgroundColor: Colors.white),
+        BottomNavigationBarItem(icon: Icon(Icons.music_video_outlined), label: "Medias", backgroundColor: Colors.white),
+        BottomNavigationBarItem(icon: Icon(Icons.account_box_outlined), label: "About", backgroundColor: Colors.white),
       ],
+      selectedFontSize: 20,
+      selectedItemColor: Colors.red[900],
+      unselectedItemColor: Colors.black,
+      unselectedFontSize: 15,
+      selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+      showUnselectedLabels: false,
+
     );
   }
   AppBar buildAppBar() {

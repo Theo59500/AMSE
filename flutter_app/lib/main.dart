@@ -57,6 +57,9 @@ final groupe_musique = [
     "Shinedown est un groupe de hard rock américain, originaire de Jacksonville, en Floride. Le groupe est formé au début de l'année 2001, et signe un contrat avec le label Atlantic Records en 2002. Shinedown dénombre, en 2018, un total de six albums studio incluant Leave a Whisper (2003), Us and Them en (2005), The Sound of Madness en (2008), Amaryllis (2012), Threat To Survival (2015) et Attention Attention (2018).\n Ils participent, entre autres, à la bande originale du film Expendables : Unité spéciale en réalisant la chanson de la bande-annonce, intitulée Diamond Eyes. Leur chanson Devour de l'album The Sound of Madness se retrouve au début du film Destination finale 4. Shinedown dénombre plus de huit millions d'albums vendus dans le monde.",
     [['ATTENTION ATTENTION', '2018', 'images/shinedown/shinedown_attentionattention.jpg'], ['Threat to Survival', '2015', 'images/shinedown/shinedown_threattosurvival.jpg'], ["Amaryllis", "2008", "images/shinedown/shinedown_thesoundofmadness.jpg"], ["Us and Them", "2005", 'images/shinedown/shinedown_usandthem.jpg'], ["Leave a Whisper", "2003", "images/shinedown/shinedown_leaveawhisper.jpg"]],
   ),
+  /**######################################################################################################**/
+  /** J'ai copié-collé le MediaModel 1 pour ajouter du contenu, on imagine que ce sont des autrs groupes... **/
+  /**######################################################################################################**/
   MediaModel(
     'images/gojira/Gojira.jpg',
     'Gojira',
