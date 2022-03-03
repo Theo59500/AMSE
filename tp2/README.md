@@ -2,15 +2,13 @@
 
 TP2 AMSE dev web mobile
 
-## Getting Started
+## Objectif
+Ce projet a pour but de créer un jeu de Taquin.
 
-This project is a starting point for a Flutter application.
+## Lancer le Projet
+Dans l'invite de commande, dans le dossier "tp2", saisir 'flutter run' pour lancer l'application.
+(Choisir ensuite '2' pour séléctionner Chrome.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Explications
+Le projet contenait 7 exercices afin de réaliser le jeu de Taquin par étape (le dernier étant le jeu de Taquin fonctionnel)
+Les exercices 1 à 6b sont réussis, je n'ai pas réussi à ré-attribuer les index des images dans la liste une fois celle-ci modifiée, et ce malgré le bon nombre d'heure que j'y ai passé... Je n'ai pas non plus réussi à programmer les animations...
