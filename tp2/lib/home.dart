@@ -75,7 +75,7 @@ class Home extends StatelessWidget {
           ),
           child: ListTile(
             title: Text("Exercice 4a"),
-            subtitle: Text("Animated rotate/resize image"),
+            subtitle: Text("Display a tile"),
             trailing: Icon(Icons.play_arrow),
             onTap: () {
               Navigator.push(
@@ -165,7 +165,7 @@ class Home extends StatelessWidget {
           ),
           child: ListTile(
             title: Text("Exercice 6b"),
-            subtitle: Text("Moving tiles in a board"),
+            subtitle: Text("Moving tiles in Grid"),
             trailing: Icon(Icons.play_arrow),
             onTap: () {
               Navigator.push(
