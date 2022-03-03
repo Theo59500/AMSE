@@ -69,7 +69,6 @@ class _Exo6bState extends State<Exo6b> {
     return InkWell(
       child: tile.croppedImageTile(),
       onTap: () {
-        adjacent();
         swapTiles(currentTile);
       },
     );
@@ -78,24 +77,11 @@ class _Exo6bState extends State<Exo6b> {
     print("SwapTile appelé");
     if (start == true){
         setState(() {
-          print("CurrentTile avant = $currentTile");
-          print("TouchedTile avant = $touchedTile");
           tiles.insert(currentTile, tiles.removeAt(touchedTile));
           currentTile = touchedTile;
-          print("CurrentTile après = $currentTile");
-          print("TouchedTile après = $touchedTile");
         });
     }
   }
-  adjacent(){
-    print('Adjacent appelé');
-      if (touchedTile == currentTile-1 || touchedTile == currentTile+1 || touchedTile == currentTile+TaquinSize || touchedTile == currentTile+TaquinSize){
-        Adjacent = true;
-      }
-      else{
-        Adjacent = false;
-      }
-    }
 }
 
 class Tile {
@@ -142,7 +128,6 @@ class TileWidget extends StatelessWidget {
 
 
 double TaquinSize = 3;
-bool Adjacent = false;
 int currentTile = 0;
 int touchedTile = 1;
 bool start = false;
