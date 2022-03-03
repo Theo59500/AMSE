@@ -1,6 +1,6 @@
-# TP1 ("flutter_app") AMSE
+# Flutter - AMSE : Dev Web Mobile
 
-This project called 'TP1' (the folder is named "flutter_app") is carried out as part of the AMSE's **IMT Nord Europe** course.
+These projects called 'TP1' & 'TP2' (the folder is named "flutter_app") are carried out as part of the AMSE's **IMT Nord Europe** course.
 The objetive is to discover the mobile app domain using the __flutter__.
 
 ## Flutter
